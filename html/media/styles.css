@@ -47,7 +47,6 @@ button {
 }
 
 /* search bar */
-
 .navbar input[type="text"] {
   padding: 0.5em;
   font-size: 1em;
@@ -145,7 +144,6 @@ a:hover {
 }
 .submenu-button a {
   margin: auto 0;
-  /* background-color: blue;- */
   text-align: center;
 }
 .submenu-button i {
@@ -153,17 +151,6 @@ a:hover {
   background-color: rgba(0, 0, 0, 0);
 }
 
-/* welcome div */
-.homepage {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 2em;
-  padding-top: 12em;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
 .search-container-laptop {
   display: none;
 }
