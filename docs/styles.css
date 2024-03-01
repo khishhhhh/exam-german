@@ -1,0 +1,278 @@
+/* buh element */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: capitalize;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* navigation bar tomooroo */
+.navbar {
+  width: 100%;
+  background-color: #c4b0ec;
+  position: fixed;
+}
+/* navigationii header buyu zuvhn zurag menu icon 2 */
+.navbar-header {
+  height: 4.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  margin: auto;
+  margin-left: 0;
+}
+/* logo */
+.logo {
+  height: 100%;
+  max-height: 3em;
+  margin-left: 2em;
+}
+/* menu icon */
+.navbar i {
+  font-size: 2.5em;
+  padding: 0.5rem;
+  background-color: #9370db;
+}
+.navbar button {
+  background-color: #c4b0ec;
+  border: none;
+}
+/* menu button */
+.navbar-toggle {
+  height: 100%;
+  margin-right: 1em;
+}
+
+/* search bar */
+.navbar input[type="text"] {
+  padding: 0.5em;
+  font-size: 1em;
+  border: none;
+}
+.search-container form {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.navbar .search-container button {
+  background: #ddd;
+  font-size: 0.5em;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar .search-container i:hover {
+  background: rgb(66, 14, 129);
+}
+
+/* gol menu UL elementuud */
+.main-menu-links {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  height: 0;
+  overflow: hidden;
+  transition: height 1s;
+  border-bottom: 1px solid #9370db;
+}
+
+/* buh list element */
+nav li {
+  display: flex;
+  height: 100%;
+  border-top: 1px solid #9370db;
+}
+
+/* buh link */
+.navbar a {
+  text-decoration: none;
+  display: block;
+  width: auto;
+  margin: auto;
+  color: black;
+  font-weight: 600;
+  /* border: 2px solid red; */
+  padding: 0.5em;
+}
+/* link deer hover hiihd ungu solino */
+a:hover {
+  color: white;
+}
+
+/* submenu */
+.submenu-links {
+  display: flex;
+  background-color: #9370db;
+  width: 100%;
+  flex-direction: column;
+}
+.submenu-links li {
+  height: auto;
+}
+.hide {
+  display: none;
+}
+
+#exam-link {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-lists i {
+  color: black;
+}
+/* link haruulah class */
+.show-links {
+  height: auto;
+}
+/* caret button */
+.submenu-button {
+  margin: auto 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.submenu-button button {
+  margin: -0.6em -0.3em;
+  background-color: rgba(0, 0, 0, 0);
+}
+.submenu-button a {
+  margin: auto 0;
+  text-align: center;
+}
+.submenu-button i {
+  font-size: 1.7em;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.search-container-laptop {
+  display: none;
+}
+body {
+  background-color: rgb(221, 255, 222);
+}
+/* writing styles */
+main {
+  padding: 5em 2em 2em 2em;
+}
+.writing-article {
+  line-height: 1.5em;
+}
+.writing-article li {
+  list-style-type: circle;
+  list-style-position: inside;
+  padding-left: 1em;
+}
+.writing-article p {
+  background-color: rgba(248, 248, 248, 0.548);
+  border-radius: 1em;
+  padding: 1em;
+}
+.writing-article button {
+  font-size: 1.2em;
+  margin-right: 0;
+  background-color: #9370db;
+  color: white;
+  padding: 0.2em 0.5em;
+  border-radius: 0.5em;
+  margin: 1em;
+}
+/* delgets 800px ees deeshleh  */
+@media (min-width: 600px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  /* delgets urgun ued tovc haragdahgui */
+  nav button {
+    visibility: hidden;
+    height: -0;
+    width: 0;
+    position: fixed;
+    top: -1000px;
+    left: -1000px;
+  }
+  /* main menu linknuud hevtee delgets tomrohod hevtee bolno */
+  .main-menu-links {
+    flex-direction: row;
+    height: auto;
+    overflow: visible;
+    width: auto;
+    list-style-type: none;
+    justify-content: flex-end;
+    /* width: 50%; */
+  }
+  .main-menu-links li {
+    /* width: 50%; */
+    text-align: center;
+    border-top: none;
+    align-self: center;
+    font-size: 1.4em;
+    border-left: 1px solid #9370db;
+    min-width: 7em;
+  }
+  .submenu-links {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    background-color: #9370db;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+  .submenu-links a {
+    border-bottom: 1px solid #c4b0ec;
+    padding: 1em 0 1em 0;
+  }
+  .navbar a {
+    margin-top: auto;
+    margin-bottom: auto;
+    vertical-align: middle;
+    font-size: 0.6em;
+    text-align: center;
+    vertical-align: top;
+  }
+  #exam-link {
+    position: relative;
+    display: inline-block;
+  }
+  #exam-link:hover .submenu-links {
+    display: block;
+  }
+  .search-container {
+    display: none;
+  }
+  .search-container-laptop {
+    display: block;
+    position: absolute;
+    top: 4.5em;
+  }
+  .search-container-laptop button {
+    visibility: visible;
+    width: auto;
+    height: auto;
+    background: #ddd;
+    font-size: 0.5em;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+  main {
+    padding: 8em 3em 3em 3em;
+  }
+}
+/* delgets 1000px ees deesh bh ued */
+@media (min-width: 1000px) {
+  .navbar a {
+    font-size: 0.8em;
+  }
+}
