@@ -6,6 +6,7 @@ module.exports = {
   entry: "./src/js/index.js",
   devServer: {
     static: "./dist",
+    historyApiFallback: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -15,6 +16,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: "comingSoon.html",
       template: "src/comingSoon.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "writing.html",
+      template: "src/writing.html",
     }),
   ],
   module: {

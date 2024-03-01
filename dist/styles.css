@@ -5,6 +5,7 @@
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-transform: capitalize;
+  font-family: "Times New Roman", Times, serif;
 }
 
 /* navigation bar tomooroo */
@@ -31,12 +32,12 @@
   margin-left: 2em;
 }
 /* menu icon */
-nav i {
+.navbar i {
   font-size: 2.5em;
   padding: 0.5rem;
   background-color: #9370db;
 }
-button {
+.navbar button {
   background-color: #c4b0ec;
   border: none;
 }
@@ -81,14 +82,14 @@ button {
 }
 
 /* buh list element */
-li {
+nav li {
   display: flex;
   height: 100%;
   border-top: 1px solid #9370db;
 }
 
 /* buh link */
-nav a {
+.navbar a {
   text-decoration: none;
   display: block;
   width: auto;
@@ -157,15 +158,41 @@ a:hover {
 body {
   background-color: rgb(221, 255, 222);
 }
+/* writing styles */
+main {
+  padding: 5em 2em 2em 2em;
+}
+.writing-article {
+  line-height: 1.5em;
+}
+.writing-article li {
+  list-style-type: circle;
+  list-style-position: inside;
+  padding-left: 1em;
+}
+.writing-article p {
+  background-color: rgba(248, 248, 248, 0.548);
+  border-radius: 1em;
+  padding: 1em;
+}
+.writing-article button {
+  font-size: 1.2em;
+  margin-right: 0;
+  background-color: #9370db;
+  color: white;
+  padding: 0.2em 0.5em;
+  border-radius: 0.5em;
+  margin: 1em;
+}
 /* delgets 800px ees deeshleh  */
-@media (min-width: 800px) {
+@media (min-width: 600px) {
   .navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
   /* delgets urgun ued tovc haragdahgui */
-  button {
+  nav button {
     visibility: hidden;
     height: -0;
     width: 0;
@@ -173,7 +200,6 @@ body {
     top: -1000px;
     left: -1000px;
   }
-
   /* main menu linknuud hevtee delgets tomrohod hevtee bolno */
   .main-menu-links {
     flex-direction: row;
@@ -193,7 +219,6 @@ body {
     border-left: 1px solid #9370db;
     min-width: 7em;
   }
-
   .submenu-links {
     display: none;
     z-index: 1;
@@ -205,8 +230,7 @@ body {
     border-bottom: 1px solid #c4b0ec;
     padding: 1em 0 1em 0;
   }
-
-  nav a {
+  .navbar a {
     margin-top: auto;
     margin-bottom: auto;
     vertical-align: middle;
@@ -214,7 +238,6 @@ body {
     text-align: center;
     vertical-align: top;
   }
-
   #exam-link {
     position: relative;
     display: inline-block;
@@ -231,7 +254,6 @@ body {
     top: 4.5em;
   }
   .search-container-laptop button {
-    /* float: right; */
     visibility: visible;
     width: auto;
     height: auto;
@@ -244,10 +266,13 @@ body {
     left: 0;
     z-index: 10;
   }
+  main {
+    padding: 8em 3em 3em 3em;
+  }
 }
 /* delgets 1000px ees deesh bh ued */
 @media (min-width: 1000px) {
-  nav a {
+  .navbar a {
     font-size: 0.8em;
   }
 }
