@@ -3,7 +3,10 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
-  entry: "./src/js/index.js",
+  entry: {
+    main: "./src/js/index.js",
+    writing: "./src/js/writing.js",
+  },
   devServer: {
     static: "./dist",
     historyApiFallback: true,
@@ -16,10 +19,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: "comingSoon.html",
       template: "src/comingSoon.html",
+      chunks: ["main"],
     }),
     new HtmlWebpackPlugin({
       filename: "writing.html",
       template: "src/writing.html",
+      chunks: ["main", "writing"],
     }),
   ],
   module: {
@@ -37,7 +42,19 @@ module.exports = {
     ],
   },
   output: {
-    filename: "main.js",
+    filename: "[name].js",
     path: path.resolve(__dirname, "dist"),
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+      },
+    ],
   },
 };

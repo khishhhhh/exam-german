@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-transform: capitalize;
+
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -13,6 +13,7 @@
   width: 100%;
   background-color: #c4b0ec;
   position: fixed;
+  text-transform: capitalize;
 }
 /* navigationii header buyu zuvhn zurag menu icon 2 */
 .navbar-header {

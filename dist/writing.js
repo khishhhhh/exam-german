@@ -1,0 +1,1 @@
+document.querySelectorAll(".answerbtn").forEach((e=>{e.addEventListener("click",(e=>{e.target.parentNode.querySelector("p").classList.toggle("hide")}))}));

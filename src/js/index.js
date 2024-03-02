@@ -1,3 +1,4 @@
+import "../styles.css";
 const navToggle = document.querySelector(".navbar-toggle");
 const links = document.querySelector(".main-menu-links");
 const buttons = document.querySelectorAll(".submenu-button");
@@ -13,7 +14,6 @@ buttons.forEach((button) => {
       e.target.matches(".submenu-down, .submenu-down *")
     ) {
       var clickedMainMenu = e.target.parentNode.parentNode.parentNode;
-      console.log("doccccc", clickedMainMenu);
       var subMenu = clickedMainMenu.querySelector(".submenu-links");
       subMenu.classList.toggle("hide");
       var carets = clickedMainMenu.querySelectorAll("button");
@@ -21,16 +21,5 @@ buttons.forEach((button) => {
         caret.classList.toggle("hide");
       });
     }
-  });
-});
-
-const answerbtns = document.querySelectorAll(".answerbtn");
-answerbtns.forEach((button) => {
-  button.addEventListener("click", (e) => {
-    console.log("Clicked " + e.target.parentNode);
-    var clickedArticle = e.target.parentNode;
-    var prg = clickedArticle.querySelector("p");
-    prg.classList.toggle("hide");
-    console.log(prg);
   });
 });
