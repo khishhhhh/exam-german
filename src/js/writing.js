@@ -2,6 +2,7 @@ import { writingData } from "./writing-data.js";
 import { elements } from "./view/base.js";
 import * as searchView from "./view/searchView";
 import Search from "./model/search.js";
+import "../styles.css";
 
 const state = {};
 // const writingdiv = document.getElementById("writing-div");

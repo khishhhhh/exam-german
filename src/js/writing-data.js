@@ -1,7 +1,7 @@
 export const writingData = [
   {
     id: 1,
-    level: "a2",
+    level: "a1",
     section: "writing",
     teil: 2,
     title:
@@ -16,7 +16,7 @@ export const writingData = [
   },
   {
     id: 2,
-    level: "a2",
+    level: "a1",
     section: "writing",
     teil: 2,
     title:
@@ -31,7 +31,7 @@ export const writingData = [
   },
   {
     id: 3,
-    level: "b1",
+    level: "a1",
     section: "writing",
     teil: 2,
     title:
@@ -46,7 +46,7 @@ export const writingData = [
   },
   {
     id: 4,
-    level: "b1",
+    level: "a1",
     section: "writing",
     teil: 2,
     title:

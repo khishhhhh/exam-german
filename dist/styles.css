@@ -164,6 +164,9 @@ body {
 main {
   padding: 5em 2em 2em 2em;
 }
+.result-div {
+  margin-top: 3em;
+}
 .writing-article {
   line-height: 1.5em;
 }

@@ -1,4 +1,5 @@
 import { elements } from "./view/base";
+import "../styles.css";
 
 elements.navToggle.addEventListener("click", function () {
   // console.log(links.classList);

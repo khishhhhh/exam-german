@@ -27,6 +27,11 @@ module.exports = {
       template: "src/writing.html",
       chunks: ["main", "writing"],
     }),
+    new HtmlWebpackPlugin({
+      filename: "examprep.html",
+      template: "src/examprep.html",
+      chunks: ["main"],
+    }),
   ],
   module: {
     rules: [
@@ -48,6 +53,10 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",

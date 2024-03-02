@@ -2,7 +2,7 @@ export const elements = {
   navToggle: document.querySelector(".navbar-toggle"),
   mainMenulinks: document.querySelector(".main-menu-links"),
   subMenuBtns: document.querySelectorAll(".submenu-button"),
-  resultDiv: document.getElementById("result-div"),
+  resultDiv: document.querySelector(".result-div"),
   answerBtns: document.querySelectorAll(".answerbtn"),
   searchLevelInput: document.querySelector(".level-input"),
   searchTeilInput: document.querySelector(".teil-input"),
