@@ -1,7 +1,7 @@
-export const data = [
+export const writingData = [
   {
     id: 1,
-    level: "a1",
+    level: "a2",
     section: "writing",
     teil: 2,
     title:
@@ -16,7 +16,7 @@ export const data = [
   },
   {
     id: 2,
-    level: "a1",
+    level: "a2",
     section: "writing",
     teil: 2,
     title:
@@ -31,7 +31,7 @@ export const data = [
   },
   {
     id: 3,
-    level: "a1",
+    level: "b1",
     section: "writing",
     teil: 2,
     title:
@@ -46,7 +46,7 @@ export const data = [
   },
   {
     id: 4,
-    level: "a1",
+    level: "b1",
     section: "writing",
     teil: 2,
     title:
