@@ -1,17 +1,15 @@
-import "../styles.css";
-const navToggle = document.querySelector(".navbar-toggle");
-const links = document.querySelector(".main-menu-links");
-const buttons = document.querySelectorAll(".submenu-button");
+import { elements } from "./view/base";
 
-navToggle.addEventListener("click", function () {
-  console.log(links.classList);
-  links.classList.toggle("show-links");
+elements.navToggle.addEventListener("click", function () {
+  // console.log(links.classList);
+  elements.mainMenulinks.classList.toggle("show-links");
 });
-buttons.forEach((button) => {
+elements.subMenuBtns.forEach((button) => {
   button.addEventListener("click", (e) => {
     if (
       e.target.matches(".submenu-up, .submenu-up *") ||
-      e.target.matches(".submenu-down, .submenu-down *")
+      e.target.matches(".submenu-down, .submenu-down *") ||
+      e.target.matches(".submenu-button", ".submenu-button *")
     ) {
       var clickedMainMenu = e.target.parentNode.parentNode.parentNode;
       var subMenu = clickedMainMenu.querySelector(".submenu-links");

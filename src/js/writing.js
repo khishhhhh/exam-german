@@ -1,4 +1,5 @@
 import { data } from "./writing-data";
+import { elements } from "./view/base";
 
 const writingdiv = document.getElementById("writing-div");
 window.onload = function () {
@@ -13,7 +14,7 @@ window.onload = function () {
   <button class="answerbtn">Answer</button>
   <p class="hide">${data[i].answer}</p>
 </article>`;
-    writingdiv.insertAdjacentHTML("beforeend", html);
+    elements.writingDiv.insertAdjacentHTML("beforeend", html);
   }
   const answerbtns = document.querySelectorAll(".answerbtn");
   answerbtns.forEach((button) => {

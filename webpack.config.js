@@ -15,6 +15,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: "index.html",
       template: "src/index.html", // index.html iig duurialgana
+      chunks: ["main"],
     }),
     new HtmlWebpackPlugin({
       filename: "comingSoon.html",
@@ -47,10 +48,6 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
-      },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",

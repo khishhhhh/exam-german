@@ -47,10 +47,32 @@
           </li>
         </ul>
     </nav>
-    <!-- javascript -->
+    <!-- main section -->
     <main>
+      <h1>Goethe Schreiben </h1>
+      <div class="filter-section">
+          <div class="single-input-div">
+            <label for="level">level:</label>
+          <select name="level" id="lvl-input">
+            <option value="all">all</option>
+            <option value="a1">a1</option>
+            <option value="a2">a2</option>
+            <option value="b1">b1</option>
+            <option value="b2">b2</option>
+            <option value="c1">c1</option>
+            <option value="c2">c2</option>
+          </select>
+          </div>
+          <div class="single-input-div">
+            <label for="teil">teil:</label>
+            <select name="teil" id="tl-input">
+              <option value="all">Teil 1</option>
+              <option value="all">Teil 2</option>
+            </select>
+          </div>
+          <button type="submit">search</button>
+      </div>
       <div id="writing-div">
-        <h1>Goethe Schreiben </h1>
       </div>  
     </main>
 </body>

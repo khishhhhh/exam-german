@@ -3,9 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon Page</title>
+    <title>Coming Soon</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://kit.fontawesome.com/b63e334420.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>coming soon</h1>
+    <!-- navigation bar -->
+    <nav class="navbar">
+        <div class="navbar-header">
+          <img src="./img/logo.png" class="logo" alt="" />
+          <button class="navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        </div>
+        <!-- links -->
+        <div class="search-container-laptop">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        <ul class="main-menu-links">
+          <li class="search-container">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </li>
+          <li>
+            <a href="index.html">home</a>
+          </li>
+          <li id="exam-link">
+            <div class="submenu-button">
+              <a href="comingSoon.html" >Exam Prep</a>
+              <button class="submenu-up hide"><i class="fa-solid fa-caret-up"></i></button>
+              <button class="submenu-down"><i class="fa-solid fa-caret-down"></i></button>
+            </div>
+            <!-- sub menu links of exam-->
+            <div class="submenu-links hide">
+              <a href="writing.html">writing</a>
+              <a href="comingSoon.html">speaking</a>
+            </div>
+          </li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Coming Soon</h1>
+    </main>
 </body>
 </html>
