@@ -186,10 +186,10 @@ export const writingData = [
     detail: [
       "Warum schreiben Sie?",
       "Wann können Sie Deutschkurs besuchen?",
-      "Was ist die Hausaufgabe?",
+      "Was ist die Hausteil?",
     ],
     answer:
-      "Sehr geehrter Herr Jacob,</br>ich habe seit 2 Tagen eine Erkältung und kann den Deutschkurs nicht besuchen. Ich muss im Bett bleiben. Ich kann nächsten Montag wieder kommen. Könnten Sie mir bitte die Hausaufgaben per E-Mail schicken? Vielen Dank im Voraus.</br>Mit freundlichen Grüßen</br>Kristen Schmidt ",
+      "Sehr geehrter Herr Jacob,</br>ich habe seit 2 Tagen eine Erkältung und kann den Deutschkurs nicht besuchen. Ich muss im Bett bleiben. Ich kann nächsten Montag wieder kommen. Könnten Sie mir bitte die Hausteiln per E-Mail schicken? Vielen Dank im Voraus.</br>Mit freundlichen Grüßen</br>Kristen Schmidt ",
   },
   {
     id: 14,
@@ -216,5 +216,150 @@ export const writingData = [
     detail: ["Warum schreiben Sie?", "Wann möchten Sie ihn besuchen?"],
     answer:
       "Sehr geehrter Herr Jack,</br>ich habe seit gestern Kopfschmerzen, deshalb   schreibe ich Sie an. Ich möchte mit Ihnen einen Termin vereinbaren. Ich habe morgen Mittag und am Montag um 14 Uhr Zeit. Passt Ihnen das? Bitte antworten Sie mir schnell.</br>Mit freundlichen Grüßen</br>Kristen Schmidt ",
+  },
+];
+export const speakingData = [
+  {
+    id: 1,
+    level: "a1",
+    section: "speaking",
+    teil: 1,
+    title: "Name",
+    img: "",
+    answer:
+      "Ich heiße Kirsten.<br/> Mein Name ist Kirsten.<br/> Mein Vorname ist Kirsten.<br/>Mein Nachname ist Schmidt.<br/>Mein Familienname ist Schmidt.<br/>Ich bin Kirsten.<br/>",
+  },
+  {
+    id: 2,
+    level: "a1",
+    section: "speaking",
+    teil: 1,
+    title: "Alter",
+    img: "",
+    answer: "Ich bin zweiundzwanzig Jahre alt.",
+  },
+  {
+    id: 3,
+    level: "a1",
+    section: "speaking",
+    teil: 1,
+    title: "Land",
+    img: "",
+    answer: "Ich komme aus Russland.<br/>Ich lebe in Österreich. ",
+  },
+  {
+    id: 4,
+    level: "a1",
+    section: "speaking",
+    teil: 1,
+    title: "Wohnort",
+    img: "",
+    answer: "Ich wohne in Wien<br/>Ich lebe in Wien. ",
+  },
+  {
+    id: 5,
+    level: "a1",
+    section: "speaking",
+    teil: 1,
+    title: "Sprachen",
+    img: "",
+    answer:
+      "Ich spreche Englisch, Russisch und etwas Deutsch.<br/>Ich kann Deutsch Englisch und Russisch sprechen. <br/>Ich lerne Deutsch.",
+  },
+  {
+    id: 1,
+    level: "a1",
+    section: "speaking",
+    teil: 2,
+    title: "Ferien: Buch",
+    img: "",
+    answer:
+      "Liest du Bücher in den Ferien?<br/>Ja, ich lese Bücher in den Ferien.<br/>Nein, ich lese keine Bücher in den Ferien.",
+  },
+  {
+    id: 2,
+    level: "a1",
+    section: "speaking",
+    teil: 2,
+    title: "Wohnen: Familie",
+    img: "",
+    answer:
+      "Wo lebst deine Familie? Meine Familie lebt in einem Ferienhaus?<br/>Lebst du mit deiner Familie? Ja, ich lebe mit meiner Familie, Nein, ich lebe nicht mit meiner Familie, ich lebe alleine. ",
+  },
+  {
+    id: 3,
+    level: "a1",
+    section: "speaking",
+    teil: 2,
+    title: "Wohnen: Haustier",
+    img: "",
+    answer:
+      "Hast du ein Haustier zu Hause?<br/>Ja, ich lebe mit meinem Hund.<br/>Nein, ich habe kein Haustier zu Hause. Ich mag Haustiere nicht.",
+  },
+  {
+    id: 4,
+    level: "a1",
+    section: "speaking",
+    teil: 2,
+    title: "Wohnen: Computer",
+    img: "",
+    answer:
+      "Hast du einen Computer zu Hause?<br/>Ja, ich habe einen Computer zu Hause. <br/>Nein, ich habe keinen Computer zu Hause. Er ist teuer. ",
+  },
+  {
+    id: 5,
+    level: "a1",
+    section: "speaking",
+    teil: 2,
+    title: "Wohnen: Garten",
+    img: "",
+    answer:
+      "Hast du einen Garten zu Hause?<br/>Ja ich habe einen Garten <br/>Nein, ich habe keinen Garten. Ich lebe in einem Apartment.",
+  },
+  {
+    id: 1,
+    level: "a1",
+    section: "speaking",
+    teil: 2,
+    title: "Photo, exclamation mark",
+    img: "./img/a1speakingteil3/a1speakingteil3 (1).png",
+    answer: "Zeig mir bitte das Foto!<br/>Ja, gern! / Hier bitte.",
+  },
+  {
+    id: 2,
+    level: "a1",
+    section: "speaking",
+    teil: 2,
+    title: "Music player and question mark",
+    img: "./img/a1speakingteil3/a1speakingteil3 (2).png",
+    answer:
+      "Wo ist dein Musikspieler?<br/>Mein Musikspieler ist in meinem Rucksack.",
+  },
+  {
+    id: 3,
+    level: "a1",
+    section: "speaking",
+    teil: 2,
+    title: "2 Magazin and exclamation mark",
+    img: "./img/a1speakingteil3/a1speakingteil3 (1).png",
+    answer: "Gib mir das Magazin!<br/>Ja, gern.",
+  },
+  {
+    id: 4,
+    level: "a1",
+    section: "speaking",
+    teil: 2,
+    title: "Orange and exclamation mark",
+    img: "./img/a1speakingteil3/a1speakingteil3 (1).png",
+    answer: "Iß mehr Orangen! Sie sind gesund.<br/>Einverstanden.",
+  },
+  {
+    id: 5,
+    level: "a1",
+    section: "speaking",
+    teil: 2,
+    title: "Banana and question mark",
+    img: "./img/a1speakingteil3/a1speakingteil3 (1).png",
+    answer: "Wo ist die Banane?<br/>Sie ist auf dem Tisch. ",
   },
 ];
