@@ -1,8 +1,10 @@
 export default class Search {
-  constructor(section, level, teil) {
+  constructor(section, level, teil, id, img = "") {
     this.section = section;
     this.level = level;
     this.teil = teil;
+    this.id = id;
+    this.img = img;
   }
   doSearch(arr) {
     var result = [];

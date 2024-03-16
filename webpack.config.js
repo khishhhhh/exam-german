@@ -6,6 +6,7 @@ module.exports = {
   entry: {
     main: "./src/js/index.js",
     writing: "./src/js/writing.js",
+    speaking: "./src/js/speaking.js",
   },
   devServer: {
     static: "./dist",
@@ -31,6 +32,11 @@ module.exports = {
       filename: "examprep.html",
       template: "src/examprep.html",
       chunks: ["main"],
+    }),
+    new HtmlWebpackPlugin({
+      filename: "speaking.html",
+      template: "src/speaking.html",
+      chunks: ["main", "speaking"],
     }),
   ],
   module: {

@@ -1,4 +1,4 @@
-import { writingData } from "./data.js";
+import { speakingData } from "./data.js";
 import { elements } from "./view/base.js";
 import * as searchView from "./view/searchView";
 import Search from "./model/search.js";
@@ -10,23 +10,23 @@ window.onload = function () {};
 const controlSearch = async () => {
   //Webees hailtiin tulhuur ugiig gargaj avah
   const sinput = searchView.getInput();
-  console.log("writing", ...sinput);
+  console.log("speaking from controlSearch", ...sinput);
   //input hooson bish bol daraahiig hiine
   if (sinput) {
     // hailtiing obiekt uusgeh
-    var searching = new Search("writing", ...sinput);
+    var searching = new Search("speaking", ...sinput);
     console.log(searching);
     // Hailt hiihed zoriult delgetsiin ui iig beltgeh
     searchView.clearSearchResult();
 
     // hailtiig guitsetgeh
-    await searching.doSearch(writingData);
+    await searching.doSearch(speakingData);
     console.log(
       "searching.dosearchiin ur dun",
-      searching.doSearch(writingData)
+      searching.doSearch(speakingData)
     );
     // hailtiin ur dung delgetsend uzuuleh
-    searchView.renderResults(searching.doSearch(writingData));
+    searchView.renderResults(searching.doSearch(speakingData));
     // buh hariu haruulah tovciig ajluulah
     const answerbtns = document.querySelectorAll(".answerbtn");
     answerbtns.forEach((button) => {
