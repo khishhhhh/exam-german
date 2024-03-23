@@ -38,6 +38,10 @@ module.exports = {
       template: "src/speaking.html",
       chunks: ["main", "speaking"],
     }),
+    new HtmlWebpackPlugin({
+      filename: "add.html",
+      template: "src/add.html",
+    }),
   ],
   module: {
     rules: [

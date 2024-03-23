@@ -267,6 +267,63 @@ export const speakingData = [
       "Ich spreche Englisch, Russisch und etwas Deutsch.<br/>Ich kann Deutsch Englisch und Russisch sprechen. <br/>Ich lerne Deutsch.",
   },
   {
+    id: 6,
+    level: "a1",
+    section: "speaking",
+    teil: 1,
+    title: "Beruf",
+    img: "",
+    answer: "Ich bin Kochin.",
+  },
+  {
+    id: 7,
+    level: "a1",
+    section: "speaking",
+    teil: 1,
+    title: "Schule",
+    img: "",
+    answer:
+      "Ich habe die 28te Schule in der Mongolei abgeschlossen.<br/>Ich besuche die 28te Schule.<br/>Ich gehe in die 11te Klasse.<br/>Meine Lieblingsfächer sind Mathematik und Deutsch.",
+  },
+  {
+    id: 8,
+    level: "a1",
+    section: "speaking",
+    teil: 1,
+    title: "Handynummer",
+    img: "",
+    answer:
+      "Meine Handynummer ist ein zwei drei vier funf sechs sieben acht neun. ",
+  },
+  {
+    id: 9,
+    level: "a1",
+    section: "speaking",
+    teil: 1,
+    title: "Telefonnummer",
+    img: "",
+    answer:
+      "Meine Telefonnummer ist ein zwei drei vier funf sechs sieben acht neun.",
+  },
+  {
+    id: 10,
+    level: "a1",
+    section: "speaking",
+    teil: 1,
+    title: "Postleitzahl",
+    img: "",
+    answer: "Meine Postleitzahl ist 12345.",
+  },
+  {
+    id: 11,
+    level: "a1",
+    section: "speaking",
+    teil: 1,
+    title: "Hobby",
+    img: "",
+    answer: "Meine Hobbys sind Kochen, Lesen und Tanzen.<br/>Ich koche gern.",
+  },
+  {
     id: 1,
     level: "a1",
     section: "speaking",
@@ -316,6 +373,17 @@ export const speakingData = [
     answer:
       "Hast du einen Garten zu Hause?<br/>Ja ich habe einen Garten <br/>Nein, ich habe keinen Garten. Ich lebe in einem Apartment.",
   },
+  {
+    id: 5,
+    level: "a1",
+    section: "speaking",
+    teil: 2,
+    title: "Wohnen: Freundinnen/Freunde einladen",
+    img: "",
+    answer:
+      "Lädst du deine Freundinnen/Freunde zu Hause ein?<br/>Ja, ich lade meine Freundinnen/Freunde zu Hause ein. <br/>Nein, ich lade meine Freundinnen/Freunde zu Hause ein.",
+  },
+
   {
     id: 1,
     level: "a1",
